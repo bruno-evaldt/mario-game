@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+background: #7e3402;
+}
 .game-board{
     width: 100%;
     height: 500px;
