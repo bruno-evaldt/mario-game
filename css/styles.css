@@ -38,7 +38,31 @@ background: #7e3402;
     width: 550px;
     animation: clouds-animation 20s infinite linear;
 }
+.game-over{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    cursor: pointer;
+    display: none;
 
+}
+.retry {
+    position: absolute;
+    width: 10px;
+    top: 80%;
+    left: 18%;
+    cursor: pointer;
+    display: none;
+}
+
+#score {
+    display: flex;
+    margin: 20px;
+    font-size: large;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
 @keyframes pipe-animation {
     from{ 
         right: -80px;
