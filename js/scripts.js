@@ -12,6 +12,11 @@ const updateScore = () => {
 
 const gameover = () => {
     clearInterval(loop)
+   
+}
+
+const restartGame = () => {
+    location.reload()
 }
 
 
@@ -58,9 +63,16 @@ const jump = () => {
             
             gameover()
             
+          
         }
         
     }, 10);
 
 
 document.addEventListener('keydown', jump);
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Enter") {
+        restartGame();
+      }
+});
