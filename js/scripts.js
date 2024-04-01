@@ -3,11 +3,18 @@ const pipe = document.querySelector('.pipe');
 const btnRetry = document.querySelector('.retry')
 const img = document.querySelector('.game-over')
 let score = 0;
+let passedPipe = false;
+let jumping = false;
+let passedPipeThisRound = false;
+
 
 
 const updateScore = () => {
-    score++; 
-    document.getElementById('score').textContent = 'Score: ' + score; 
+    if(passedPipe){
+        score++; 
+        document.getElementById('score').textContent = 'Score: ' + score;
+    }
+     
 }
 
 const gameover = () => {
@@ -21,22 +28,27 @@ const restartGame = () => {
 
 
 const jump = () => {
-    mario.classList.add('jump');
+    if(!jumping) {
+        mario.classList.add('jump');
+        jumping=true;
+    
+    
 
     setTimeout(() => {
       
         mario.classList.remove('jump');
+        jumping=false;
         }, 500);
+    }
 }
 
      const loop = setInterval (() => {
 
         const pipePosition = pipe.offsetLeft;
         const marioPosition = +window.getComputedStyle(mario).bottom.replace('px',' ');
-        
+
     
         console.log(marioPosition);
-    
     
         if (pipePosition <= 120 && pipePosition >0 && marioPosition < 90) {
     
@@ -51,7 +63,7 @@ const jump = () => {
             mario.style.marginLeft = '50px'
     
             btnRetry.src='./img/retry.png';
-            btnRetry.style.width = '35px'
+            btnRetry.style.width = '50px'
             btnRetry.style.marginLeft = '400px'
             btnRetry.style.display = 'block'
     
@@ -59,20 +71,17 @@ const jump = () => {
             img.style.width = '400px'
             img.style.marginLeft = '400px'
             img.style.display = 'block'
-            
-            
-            gameover()
-            
-          
+
+            gameover();
+        } 
+        if (pipePosition <= 0 && !passedPipe && jumping) {
+            passedPipe = true; 
+            updateScore(); 
         }
         
+      
     }, 10);
 
 
 document.addEventListener('keydown', jump);
 
-document.addEventListener('keydown', function(event) {
-    if (event.key === "Enter") {
-        restartGame();
-      }
-});

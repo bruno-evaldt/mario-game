@@ -48,7 +48,6 @@ background: #7e3402;
 }
 .retry {
     position: absolute;
-    width: 10px;
     top: 80%;
     left: 18%;
     cursor: pointer;
