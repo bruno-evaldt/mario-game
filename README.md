@@ -18,7 +18,7 @@
   <img alt="Mario game" src=".github/preview.jpg" width="100%">
 </p>
 
-##🚀 TECNOLOGIAS
+## 🚀 TECNOLOGIAS
   Esse projeto foi desenvolvido com as seguintes tecnlogias: 
   
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)&nbsp;
@@ -28,7 +28,9 @@
 ![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
 
-##💻 PROJETO
+## 💻 PROJETO
+No Jogo do Mario, o objetivo é ajudar Mario, a evitar cano verde que aparecem repetidas vezes na tela. O jogador precisa pressinar na barra de espaço do teclado para fazer o Mario pular e evitar colidir com o obstáculo, cada pulo com sucesso é contabilizado 1 ponto(score). Caso o Mario colida, o jogo é encerrado. 
+
 
 
 ## :memo: LICENÇA
