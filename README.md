@@ -30,6 +30,7 @@
 
 ## 💻 PROJETO
 No Jogo do Mario, o objetivo é ajudar Mario, a evitar cano verde que aparecem repetidas vezes na tela. O jogador precisa pressinar na barra de espaço do teclado para fazer o Mario pular e evitar colidir com o obstáculo, cada pulo com sucesso é contabilizado 1 ponto(score). Caso o Mario colida, o jogo é encerrado. 
+Click aqui para jogar: (https://bruno-evaldt.github.io/mario-game/)
 
 
 
