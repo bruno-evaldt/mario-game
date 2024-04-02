@@ -48,7 +48,7 @@ background: #7e3402;
 }
 .retry {
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 18%;
     cursor: pointer;
     display: none;
@@ -56,12 +56,14 @@ background: #7e3402;
 
 #score {
     display: flex;
-    margin: 20px;
+    margin: 10px;
     font-size: large;
     font-family: "Press Start 2P", system-ui;
     font-weight: 700;
     font-style: normal;
 }
+
+
 @keyframes pipe-animation {
     from{ 
         right: -80px;
