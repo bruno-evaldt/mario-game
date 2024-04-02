@@ -10,15 +10,15 @@
   <a href="#memo-licença">Licença</a>
 </p>
 
-
 <p align="center">
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 </p>
-
 <br>
+<p align="center">
+  <img alt="Mario game" src=".github/preview.jpg" width="100%">
+</p>
 
-
-## 🚀 TECNOLOGIAS
+##🚀 TECNOLOGIAS
   Esse projeto foi desenvolvido com as seguintes tecnlogias: 
   
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)&nbsp;
@@ -28,5 +28,10 @@
 ![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
 
-## 💻 PROJETO
+##💻 PROJETO
+
+
+## :memo: LICENÇA
+
+Esse projeto está sob a licença MIT.
 
